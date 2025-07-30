@@ -1,5 +1,7 @@
-THEME_NAMES=("Tokyo Night" "Catppuccin" "Nord" "Everforest" "Gruvbox" "Kanagawa" "Rose Pine" "Dark High Contrast" "Light High Contrast")
-THEME=$(gum choose "${THEME_NAMES[@]}" "<< Back" --header "Choose your theme" --height 10 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
+#!/bin/bash
+
+THEME_NAMES=("Tokyo Night" "Catppuccin" "Nord" "Everforest" "Gruvbox" "Kanagawa" "Ristretto" "Rose Pine" "Matte Black" "Dark High Contrast" "Light High Contrast")
+THEME=$(gum choose "${THEME_NAMES[@]}" "<< Back" --header "Choose your theme" --height 12 | tr '[:upper:]' '[:lower:]' | sed 's/ /-/g')
 
 if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   cp $OMAKUB_PATH/themes/$THEME/alacritty.toml ~/.config/alacritty/theme.toml
@@ -17,7 +19,7 @@ if [ -n "$THEME" ] && [ "$THEME" != "<<-back" ]; then
   source $OMAKUB_PATH/themes/$THEME/gnome.sh
   source $OMAKUB_PATH/themes/$THEME/tophat.sh
   source $OMAKUB_PATH/themes/$THEME/vscode.sh
-  
+
   if [ -f "$OMAKUB_PATH/themes/$THEME/zed.sh" ]; then
     source $OMAKUB_PATH/themes/$THEME/zed.sh
   fi

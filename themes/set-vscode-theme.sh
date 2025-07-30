@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if command -v code &>/dev/null; then
   if [ -n "$VSC_EXTENSION" ]; then
     code --install-extension $VSC_EXTENSION >/dev/null

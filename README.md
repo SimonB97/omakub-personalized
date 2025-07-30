@@ -20,7 +20,7 @@ While omakub is purposed to be an opinionated take, the open source community of
 
 ## PERSONAL README
 
-How to Get Future Official Updates
+### How to Get Future Official Updates
 
 ```bash
 git fetch upstream
@@ -28,3 +28,7 @@ git fetch upstream
 git merge upstream/master  # or upstream/stable
 git push origin main
 ```
+
+### Modifications made
+
+- Added High Contrast themes (light/dark) and adjusted official themes to reset high contrast flags

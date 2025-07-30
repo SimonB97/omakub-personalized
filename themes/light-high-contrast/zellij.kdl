@@ -1,0 +1,15 @@
+themes {
+    light-high-contrast {
+        fg 0 0 0
+        bg 255 255 255
+        black 0 0 0
+        red 204 0 0
+        green 0 102 0
+        yellow 204 102 0
+        blue 0 102 204
+        magenta 204 0 204
+        cyan 0 102 102
+        white 255 255 255
+        orange 255 136 0
+    }
+}

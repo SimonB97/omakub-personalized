@@ -17,3 +17,16 @@ Omakub is released under the [MIT License](https://opensource.org/licenses/MIT).
 While omakub is purposed to be an opinionated take, the open source community offers alternative customization, add-ons, extras, that you can use to adjust, replace or enrich your experience.
 
 [⇒ Browse the omakub extensions.](EXTENSIONS.md)
+
+## PERSONAL README
+
+How to Get Future Official Updates
+
+When new Omakub versions are released, you can incorporate them into your fork:
+
+```bash
+git fetch upstream
+# Merge from whichever branch upstream uses (likely master or stable)
+git merge upstream/master  # or upstream/stable
+git push origin main
+```

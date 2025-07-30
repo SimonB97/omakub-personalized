@@ -22,8 +22,6 @@ While omakub is purposed to be an opinionated take, the open source community of
 
 How to Get Future Official Updates
 
-When new Omakub versions are released, you can incorporate them into your fork:
-
 ```bash
 git fetch upstream
 # Merge from whichever branch upstream uses (likely master or stable)
